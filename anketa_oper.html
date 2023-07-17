@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anketa</title>
+  </head>
+  <body>
+    <h1>Задание №3</h1>
+    <p>
+      Требуется спросить у пользователя:<br />
+      фамилию, имя, отчество РАЗДЕЛЬНО (оператором prompt)<br />
+      возраст в годах (оператором prompt)<br />
+      пол (оператором confirm, например, "ваш пол - мужской?")<br />
+      и вывести оператором alert анкету пользователя по примеру:<br />
+      <br />
+      ФИО: Иванов Иван Иванович<br />
+      возраст, лет: 20<br />
+      возраст, дней: 7300<br />
+      пол: мужской<br />
+      пенсионный возраст: нет<br />
+      <br />
+      На странице anketa_oper.html реализовать задание с использованием условной
+      операции (?:), без условного оператора (if).<br />
+      В обоих реализациях оператор alert должен использоваться ровно один
+      раз.<br />
+      Учесть, что у мужчин и женщин пенсионный возраст различается.
+    </p>
+    <p id="result"></p>
+    <script>
+      const firstName = prompt("Ваше имя?");
+      const middleName = prompt("Ваше отчество?");
+      const lastName = prompt("Ваша фамилия?");
+      const fullName = `${firstName} ${middleName} ${lastName}`;
+
+      const age = prompt("Ваш возраст?");
+      const ageInDays = age * 365;
+
+      const isMale = confirm("ваш пол - мужской?");
+      const sex = isMale ? "мужской" : "женский";
+
+      const retiredAge = isMale ? 60 : 55;
+
+      const isRetired = age >= retiredAge ? "да" : "нет";
+
+      const fullInfo = `
+            ФИО: ${fullName}
+            возраст, лет: ${age}
+            возраст, дней: ${ageInDays}
+            пол: ${sex}
+            пенсионный возраст: ${isRetired}
+        `;
+      alert(fullInfo);
+
+      const result = document.getElementById("result");
+      result.innerText = `
+            РЕЗУЛЬТАТ
+            ${fullInfo}
+            `;
+    </script>
+  </body>
+</html>
