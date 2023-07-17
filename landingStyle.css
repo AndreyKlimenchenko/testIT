@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+}
+
+.header {
+  padding: 12px 0px;
+  background-color: rgb(182, 215, 228);
+  clear: left;
+}
+
+.headerTitle {
+  margin: 0px;
+
+  text-align: center;
+  color: rgb(18, 21, 244);
+}
+
+.mainContent {
+  margin-left: 280px;
+}
+
+.menu {
+  float: left;
+  width: 280px;
+  padding: 20px 0px 0px 10px;
+  background-color: rgb(238, 230, 151);
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.menuTitle {
+  margin: 0px;
+}
+
+.mainTitle {
+  margin: 0px;
+}
+
+.footballImage {
+  width: 30%;
+}
