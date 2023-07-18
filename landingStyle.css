@@ -70,3 +70,19 @@ body {
 .clear {
   clear: both;
 }
+
+@media (max-width: 700px) {
+  .menu {
+    margin: 0px auto;
+    float: none;
+  }
+
+  .mainContent {
+    margin-left: 0px;
+  }
+
+  .footballImage {
+    float: none;
+    width: 100%;
+  }
+}
