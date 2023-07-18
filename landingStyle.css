@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: sans-serif;
 }
 
 .header {
@@ -10,21 +11,32 @@ body {
 
 .headerTitle {
   margin: 0px;
-
+  text-transform: uppercase;
   text-align: center;
   color: rgb(18, 21, 244);
 }
 
+.main {
+  width: 100%;
+  background-color: rgb(238, 230, 151);
+}
+
 .mainContent {
-  margin-left: 280px;
+  margin-left: 290px;
+  padding: 20px;
+  background-color: white;
+  background-image: url(ball.jpg);
+  background-repeat: repeat-y;
+  background-position: 100% 64px;
+  background-size: 70px;
 }
 
 .menu {
   float: left;
-  width: 280px;
-  padding: 20px 0px 0px 10px;
+  width: 270px;
+  padding: 20px 10px 0px 10px;
+  font-size: 25px;
   background-color: rgb(238, 230, 151);
-  box-sizing: border-box;
   height: 100%;
 }
 
@@ -33,9 +45,28 @@ body {
 }
 
 .mainTitle {
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footballImage {
   width: 30%;
+  margin: 0px 20px 10px 0px;
+  float: left;
+}
+
+.text {
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.footer {
+  padding: 12px 0px;
+  background-color: rgb(182, 215, 228);
+  clear: both;
+}
+
+.clear {
+  clear: both;
 }
